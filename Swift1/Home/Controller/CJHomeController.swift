@@ -12,7 +12,7 @@ class CJHomeController: UIViewController {
  
     var collection:UICollectionView?
     
-    var data = NSMutableArray()
+    var dataSource = [HomeNewsTitle]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +33,15 @@ extension CJHomeController {
     }
     
     private func requestData() {
-        CJNetWorkTool.loadHomeNewsTitleData()
+        weak var weakSelf = self
+        CJNetWorkTool.loadHomeNewsTitleData { (isSus, modelArr) in
+            if (isSus) {
+                weakSelf?.dataSource = modelArr
+                weakSelf?.collection?.reloadData()
+            } else {
+                print("失败")
+            }
+        }
     }
 }
 
@@ -54,12 +62,13 @@ extension CJHomeController: UICollectionViewDelegate,UICollectionViewDataSource 
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return self.dataSource.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell:CollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
-        cell.label?.text = "222"
+        let model = self.dataSource[indexPath.row]
+        cell.label?.text = model.name
         return cell
     }
 }
