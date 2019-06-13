@@ -12,13 +12,19 @@ class CollectionViewCell: UICollectionViewCell {
     
     var label:UILabel?
     
+    var model = HomeNewsTitle() {
+        didSet {
+            label?.text = model.name
+        }
+    }
+    
     override init(frame: CGRect) {
         super.init(frame:frame)
         label = UILabel.init()
         label?.font = UIFont.systemFont(ofSize: 14)
-        label?.textAlignment = .left
+        label?.textAlignment = .center
         
-        self.backgroundColor = UIColor.red
+        self.backgroundColor = UIColor.lightGray
         
         self.addSubview(label!)
     }

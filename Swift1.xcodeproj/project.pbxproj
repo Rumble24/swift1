@@ -27,6 +27,7 @@
 		9B453E4B22B0A34700D7D214 /* CJMineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B453E4A22B0A34700D7D214 /* CJMineController.swift */; };
 		9B453E4D22B0A9F900D7D214 /* CJTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B453E4C22B0A9F900D7D214 /* CJTool.swift */; };
 		9B453E5522B1EE8E00D7D214 /* HomeNewsTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B453E5422B1EE8E00D7D214 /* HomeNewsTitle.swift */; };
+		9B453E5922B23B3F00D7D214 /* CJTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B453E5822B23B3F00D7D214 /* CJTabBar.swift */; };
 		D17C424A04A7B785E0A71CA5 /* Pods_Swift1_Swift1UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B9532FB23E5DBBA15A4576 /* Pods_Swift1_Swift1UITests.framework */; };
 		E6D4DCBFE3FACB676CFF488F /* Pods_Swift1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 137CC08F9D0B548D1C4F68E1 /* Pods_Swift1.framework */; };
 /* End PBXBuildFile section */
@@ -79,6 +80,7 @@
 		9B453E4A22B0A34700D7D214 /* CJMineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CJMineController.swift; sourceTree = "<group>"; };
 		9B453E4C22B0A9F900D7D214 /* CJTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CJTool.swift; sourceTree = "<group>"; };
 		9B453E5422B1EE8E00D7D214 /* HomeNewsTitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeNewsTitle.swift; sourceTree = "<group>"; };
+		9B453E5822B23B3F00D7D214 /* CJTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CJTabBar.swift; sourceTree = "<group>"; };
 		A39A4317CCAAD9296E5B9FAE /* Pods-Swift1UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift1UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swift1UITests/Pods-Swift1UITests.release.xcconfig"; sourceTree = "<group>"; };
 		CA03BA423D27AEBC3B3D3BF2 /* Pods-Swift1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift1Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swift1Tests/Pods-Swift1Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CABACC060C2BB56F8D7BFC61 /* Pods-Swift1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swift1/Pods-Swift1.debug.xcconfig"; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 				9B09919822AE42E9007586A2 /* AppDelegate.swift */,
 				9B453E3B22B0A0D300D7D214 /* CJTabBarController.swift */,
 				9B453E3E22B0A19600D7D214 /* CJNavigationController.swift */,
+				9B453E5822B23B3F00D7D214 /* CJTabBar.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -271,7 +274,6 @@
 			isa = PBXGroup;
 			children = (
 				9B09919A22AE42E9007586A2 /* CJHomeController.swift */,
-				9B0991C822AE58AD007586A2 /* CollectionViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -279,6 +281,7 @@
 		9B453E5222B1EE7F00D7D214 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9B0991C822AE58AD007586A2 /* CollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -551,6 +554,7 @@
 				9B453E3822AF887D00D7D214 /* CJNetWorkTool.swift in Sources */,
 				9B09919B22AE42E9007586A2 /* CJHomeController.swift in Sources */,
 				9B09919922AE42E9007586A2 /* AppDelegate.swift in Sources */,
+				9B453E5922B23B3F00D7D214 /* CJTabBar.swift in Sources */,
 				9B453E4D22B0A9F900D7D214 /* CJTool.swift in Sources */,
 				9B453E4922B0A33B00D7D214 /* CJSmallVideoController.swift in Sources */,
 				9B453E4B22B0A34700D7D214 /* CJMineController.swift in Sources */,

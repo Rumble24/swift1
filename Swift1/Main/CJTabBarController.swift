@@ -12,8 +12,8 @@ class CJTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.tabBar.tintColor = CJTool.ColorHex("#f85959")
+                
+        self.setValue(CJTabBar(), forKey: "tabBar")
 
         self.addChildControllerForTabBar(vc: CJHomeController(), title: "首页", imageName: "home")
         self.addChildControllerForTabBar(vc: CJXiGuaController(), title: "西瓜视频", imageName: "video")

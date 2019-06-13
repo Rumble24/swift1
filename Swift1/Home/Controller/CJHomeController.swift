@@ -67,8 +67,7 @@ extension CJHomeController: UICollectionViewDelegate,UICollectionViewDataSource 
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell:CollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
-        let model = self.dataSource[indexPath.row]
-        cell.label?.text = model.name
+        cell.model = self.dataSource[indexPath.row]
         return cell
     }
 }
