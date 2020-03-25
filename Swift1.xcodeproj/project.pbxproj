@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6494E997242B3794008F2134 /* SGPageTitleViewConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6494E992242B3794008F2134 /* SGPageTitleViewConfigure.swift */; };
+		6494E998242B3794008F2134 /* SGPageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6494E993242B3794008F2134 /* SGPageTitleView.swift */; };
+		6494E999242B3794008F2134 /* SGPageContentCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6494E994242B3794008F2134 /* SGPageContentCollectionView.swift */; };
+		6494E99A242B3794008F2134 /* SGPageViewPopGestureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6494E995242B3794008F2134 /* SGPageViewPopGestureVC.swift */; };
+		6494E99B242B3794008F2134 /* SGPageContentScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6494E996242B3794008F2134 /* SGPageContentScrollView.swift */; };
 		9B09919922AE42E9007586A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B09919822AE42E9007586A2 /* AppDelegate.swift */; };
 		9B09919B22AE42E9007586A2 /* CJHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B09919A22AE42E9007586A2 /* CJHomeController.swift */; };
 		9B0991A022AE42EB007586A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B09919F22AE42EB007586A2 /* Assets.xcassets */; };
@@ -49,6 +54,11 @@
 		137CC08F9D0B548D1C4F68E1 /* Pods_Swift1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		175E81FF82A9F0604E4475D2 /* Pods-Swift1UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift1UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swift1UITests/Pods-Swift1UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3440AC5C6A51CB710FF85327 /* Pods-Swift1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift1Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swift1Tests/Pods-Swift1Tests.release.xcconfig"; sourceTree = "<group>"; };
+		6494E992242B3794008F2134 /* SGPageTitleViewConfigure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SGPageTitleViewConfigure.swift; sourceTree = "<group>"; };
+		6494E993242B3794008F2134 /* SGPageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SGPageTitleView.swift; sourceTree = "<group>"; };
+		6494E994242B3794008F2134 /* SGPageContentCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SGPageContentCollectionView.swift; sourceTree = "<group>"; };
+		6494E995242B3794008F2134 /* SGPageViewPopGestureVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SGPageViewPopGestureVC.swift; sourceTree = "<group>"; };
+		6494E996242B3794008F2134 /* SGPageContentScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SGPageContentScrollView.swift; sourceTree = "<group>"; };
 		9B09919522AE42E9007586A2 /* Swift1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B09919822AE42E9007586A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B09919A22AE42E9007586A2 /* CJHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CJHomeController.swift; sourceTree = "<group>"; };
@@ -126,6 +136,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6494E990242B3763008F2134 /* Lib(开源库) */ = {
+			isa = PBXGroup;
+			children = (
+				6494E991242B3794008F2134 /* SGPagingView-Swift */,
+			);
+			path = "Lib(开源库)";
+			sourceTree = "<group>";
+		};
+		6494E991242B3794008F2134 /* SGPagingView-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				6494E992242B3794008F2134 /* SGPageTitleViewConfigure.swift */,
+				6494E993242B3794008F2134 /* SGPageTitleView.swift */,
+				6494E994242B3794008F2134 /* SGPageContentCollectionView.swift */,
+				6494E995242B3794008F2134 /* SGPageViewPopGestureVC.swift */,
+				6494E996242B3794008F2134 /* SGPageContentScrollView.swift */,
+			);
+			path = "SGPagingView-Swift";
+			sourceTree = "<group>";
+		};
 		9B09918C22AE42E9007586A2 = {
 			isa = PBXGroup;
 			children = (
@@ -151,13 +181,14 @@
 		9B09919722AE42E9007586A2 /* Swift1 */ = {
 			isa = PBXGroup;
 			children = (
-				9B453E3A22B09F0800D7D214 /* Main */,
-				9B453E3922B09EFF00D7D214 /* Home */,
-				9B453E4022B0A28200D7D214 /* XiGua */,
+				6494E990242B3763008F2134 /* Lib(开源库) */,
+				9B453E3A22B09F0800D7D214 /* Main(Appdelegate) */,
+				9B453E3922B09EFF00D7D214 /* Home(首页) */,
+				9B453E4022B0A28200D7D214 /* XiGua(西瓜视频) */,
 				9B453E4122B0A29000D7D214 /* PushMessage */,
-				9B453E4222B0A2A000D7D214 /* SmallVideo */,
-				9B453E4322B0A2B200D7D214 /* Mine */,
-				9B453E3D22B0A0DB00D7D214 /* Tool */,
+				9B453E4222B0A2A000D7D214 /* SmallVideo(小视频) */,
+				9B453E4322B0A2B200D7D214 /* Mine(我的) */,
+				9B453E3D22B0A0DB00D7D214 /* Tool(工具类) */,
 			);
 			path = Swift1;
 			sourceTree = "<group>";
@@ -180,17 +211,17 @@
 			path = Swift1UITests;
 			sourceTree = "<group>";
 		};
-		9B453E3922B09EFF00D7D214 /* Home */ = {
+		9B453E3922B09EFF00D7D214 /* Home(首页) */ = {
 			isa = PBXGroup;
 			children = (
 				9B453E5122B1EE7F00D7D214 /* Controller */,
 				9B453E5322B1EE7F00D7D214 /* Model */,
 				9B453E5222B1EE7F00D7D214 /* View */,
 			);
-			path = Home;
+			path = "Home(首页)";
 			sourceTree = "<group>";
 		};
-		9B453E3A22B09F0800D7D214 /* Main */ = {
+		9B453E3A22B09F0800D7D214 /* Main(Appdelegate) */ = {
 			isa = PBXGroup;
 			children = (
 				9B09919F22AE42EB007586A2 /* Assets.xcassets */,
@@ -201,25 +232,25 @@
 				9B453E3E22B0A19600D7D214 /* CJNavigationController.swift */,
 				9B453E5822B23B3F00D7D214 /* CJTabBar.swift */,
 			);
-			path = Main;
+			path = "Main(Appdelegate)";
 			sourceTree = "<group>";
 		};
-		9B453E3D22B0A0DB00D7D214 /* Tool */ = {
+		9B453E3D22B0A0DB00D7D214 /* Tool(工具类) */ = {
 			isa = PBXGroup;
 			children = (
 				9B0991C622AE5268007586A2 /* CJConst.swift */,
 				9B453E3722AF887D00D7D214 /* CJNetWorkTool.swift */,
 				9B453E4C22B0A9F900D7D214 /* CJTool.swift */,
 			);
-			path = Tool;
+			path = "Tool(工具类)";
 			sourceTree = "<group>";
 		};
-		9B453E4022B0A28200D7D214 /* XiGua */ = {
+		9B453E4022B0A28200D7D214 /* XiGua(西瓜视频) */ = {
 			isa = PBXGroup;
 			children = (
 				9B453E4422B0A31D00D7D214 /* CJXiGuaController.swift */,
 			);
-			path = XiGua;
+			path = "XiGua(西瓜视频)";
 			sourceTree = "<group>";
 		};
 		9B453E4122B0A29000D7D214 /* PushMessage */ = {
@@ -230,20 +261,20 @@
 			path = PushMessage;
 			sourceTree = "<group>";
 		};
-		9B453E4222B0A2A000D7D214 /* SmallVideo */ = {
+		9B453E4222B0A2A000D7D214 /* SmallVideo(小视频) */ = {
 			isa = PBXGroup;
 			children = (
 				9B453E4822B0A33B00D7D214 /* CJSmallVideoController.swift */,
 			);
-			path = SmallVideo;
+			path = "SmallVideo(小视频)";
 			sourceTree = "<group>";
 		};
-		9B453E4322B0A2B200D7D214 /* Mine */ = {
+		9B453E4322B0A2B200D7D214 /* Mine(我的) */ = {
 			isa = PBXGroup;
 			children = (
 				9B453E4A22B0A34700D7D214 /* CJMineController.swift */,
 			);
-			path = Mine;
+			path = "Mine(我的)";
 			sourceTree = "<group>";
 		};
 		9B453E5122B1EE7F00D7D214 /* Controller */ = {
@@ -442,8 +473,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B453E3C22B0A0D300D7D214 /* CJTabBarController.swift in Sources */,
+				6494E99B242B3794008F2134 /* SGPageContentScrollView.swift in Sources */,
+				6494E997242B3794008F2134 /* SGPageTitleViewConfigure.swift in Sources */,
+				6494E99A242B3794008F2134 /* SGPageViewPopGestureVC.swift in Sources */,
 				9B453E4522B0A31D00D7D214 /* CJXiGuaController.swift in Sources */,
 				9B453E3F22B0A19600D7D214 /* CJNavigationController.swift in Sources */,
+				6494E998242B3794008F2134 /* SGPageTitleView.swift in Sources */,
+				6494E999242B3794008F2134 /* SGPageContentCollectionView.swift in Sources */,
 				9B453E3822AF887D00D7D214 /* CJNetWorkTool.swift in Sources */,
 				9B09919B22AE42E9007586A2 /* CJHomeController.swift in Sources */,
 				9B09919922AE42E9007586A2 /* AppDelegate.swift in Sources */,

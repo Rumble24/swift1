@@ -13,7 +13,7 @@ class CJHomeController: UIViewController {
     var collection:UICollectionView?
     
     var dataSource = [HomeNewsTitle]()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
