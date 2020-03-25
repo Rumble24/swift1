@@ -11,4 +11,7 @@ target 'Swift1' do
 
   pod 'SnapKit', '~> 5.0.0'    	# 滚动视图
 
+  pod 'Kingfisher'		# SDWebImage swift 版
+
+
 end
