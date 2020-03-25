@@ -30,6 +30,8 @@ class CJNetWorkTool: NSObject {
                         } else {
                             complete(false,[HomeNewsTitle]())
                         }
+                    } else {
+                        complete(false,[HomeNewsTitle]())
                     }
                 } else {
                     complete(false,[HomeNewsTitle]())
