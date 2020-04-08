@@ -9,6 +9,8 @@
 import UIKit
 
 class CJTool: NSObject {
+    
+    ///< 颜色转化
     static func ColorHex(_ color: String) -> UIColor? {
         if color.count <= 0 || color.count != 7 || color == "(null)" || color == "<null>" {
             return nil

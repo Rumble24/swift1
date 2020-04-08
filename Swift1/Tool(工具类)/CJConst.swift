@@ -22,3 +22,13 @@ let BASE_URL = "https://is.snssdk.com"
 let device_id: Int = 6096495334
 
 let iid: Int = 5034850950
+
+
+/// 从哪里进入头条
+enum TTFrom: String {
+    case pull = "pull"
+    case loadMore = "load_more"
+    case auto = "auto"
+    case enterAuto = "enter_auto"
+    case preLoadMoreDraw = "pre_load_more_draw"
+}

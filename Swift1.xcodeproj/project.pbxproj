@@ -12,6 +12,10 @@
 		6494E999242B3794008F2134 /* SGPageContentCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6494E994242B3794008F2134 /* SGPageContentCollectionView.swift */; };
 		6494E99A242B3794008F2134 /* SGPageViewPopGestureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6494E995242B3794008F2134 /* SGPageViewPopGestureVC.swift */; };
 		6494E99B242B3794008F2134 /* SGPageContentScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6494E996242B3794008F2134 /* SGPageContentScrollView.swift */; };
+		6494E9A0242B6454008F2134 /* CJBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6494E99F242B6454008F2134 /* CJBaseViewController.swift */; };
+		6494E9A2242B6512008F2134 /* CJBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6494E9A1242B6512008F2134 /* CJBaseView.swift */; };
+		6494E9A4242B6578008F2134 /* CJBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6494E9A3242B6578008F2134 /* CJBaseTableViewController.swift */; };
+		6494E9A6242B65AE008F2134 /* CJNewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6494E9A5242B65AE008F2134 /* CJNewsTableViewController.swift */; };
 		9B09919922AE42E9007586A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B09919822AE42E9007586A2 /* AppDelegate.swift */; };
 		9B09919B22AE42E9007586A2 /* CJHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B09919A22AE42E9007586A2 /* CJHomeController.swift */; };
 		9B0991A022AE42EB007586A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B09919F22AE42EB007586A2 /* Assets.xcassets */; };
@@ -59,6 +63,10 @@
 		6494E994242B3794008F2134 /* SGPageContentCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SGPageContentCollectionView.swift; sourceTree = "<group>"; };
 		6494E995242B3794008F2134 /* SGPageViewPopGestureVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SGPageViewPopGestureVC.swift; sourceTree = "<group>"; };
 		6494E996242B3794008F2134 /* SGPageContentScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SGPageContentScrollView.swift; sourceTree = "<group>"; };
+		6494E99F242B6454008F2134 /* CJBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CJBaseViewController.swift; sourceTree = "<group>"; };
+		6494E9A1242B6512008F2134 /* CJBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CJBaseView.swift; sourceTree = "<group>"; };
+		6494E9A3242B6578008F2134 /* CJBaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CJBaseTableViewController.swift; sourceTree = "<group>"; };
+		6494E9A5242B65AE008F2134 /* CJNewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CJNewsTableViewController.swift; sourceTree = "<group>"; };
 		9B09919522AE42E9007586A2 /* Swift1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B09919822AE42E9007586A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B09919A22AE42E9007586A2 /* CJHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CJHomeController.swift; sourceTree = "<group>"; };
@@ -156,6 +164,16 @@
 			path = "SGPagingView-Swift";
 			sourceTree = "<group>";
 		};
+		6494E99E242B643D008F2134 /* Base(基类) */ = {
+			isa = PBXGroup;
+			children = (
+				6494E99F242B6454008F2134 /* CJBaseViewController.swift */,
+				6494E9A3242B6578008F2134 /* CJBaseTableViewController.swift */,
+				6494E9A1242B6512008F2134 /* CJBaseView.swift */,
+			);
+			path = "Base(基类)";
+			sourceTree = "<group>";
+		};
 		9B09918C22AE42E9007586A2 = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +199,7 @@
 		9B09919722AE42E9007586A2 /* Swift1 */ = {
 			isa = PBXGroup;
 			children = (
+				6494E99E242B643D008F2134 /* Base(基类) */,
 				6494E990242B3763008F2134 /* Lib(开源库) */,
 				9B453E3A22B09F0800D7D214 /* Main(Appdelegate) */,
 				9B453E3922B09EFF00D7D214 /* Home(首页) */,
@@ -239,8 +258,8 @@
 			isa = PBXGroup;
 			children = (
 				9B0991C622AE5268007586A2 /* CJConst.swift */,
-				9B453E3722AF887D00D7D214 /* CJNetWorkTool.swift */,
 				9B453E4C22B0A9F900D7D214 /* CJTool.swift */,
+				9B453E3722AF887D00D7D214 /* CJNetWorkTool.swift */,
 			);
 			path = "Tool(工具类)";
 			sourceTree = "<group>";
@@ -281,6 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				9B09919A22AE42E9007586A2 /* CJHomeController.swift */,
+				6494E9A5242B65AE008F2134 /* CJNewsTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -475,18 +495,22 @@
 				9B453E3C22B0A0D300D7D214 /* CJTabBarController.swift in Sources */,
 				6494E99B242B3794008F2134 /* SGPageContentScrollView.swift in Sources */,
 				6494E997242B3794008F2134 /* SGPageTitleViewConfigure.swift in Sources */,
+				6494E9A2242B6512008F2134 /* CJBaseView.swift in Sources */,
 				6494E99A242B3794008F2134 /* SGPageViewPopGestureVC.swift in Sources */,
 				9B453E4522B0A31D00D7D214 /* CJXiGuaController.swift in Sources */,
 				9B453E3F22B0A19600D7D214 /* CJNavigationController.swift in Sources */,
+				6494E9A6242B65AE008F2134 /* CJNewsTableViewController.swift in Sources */,
 				6494E998242B3794008F2134 /* SGPageTitleView.swift in Sources */,
 				6494E999242B3794008F2134 /* SGPageContentCollectionView.swift in Sources */,
 				9B453E3822AF887D00D7D214 /* CJNetWorkTool.swift in Sources */,
 				9B09919B22AE42E9007586A2 /* CJHomeController.swift in Sources */,
 				9B09919922AE42E9007586A2 /* AppDelegate.swift in Sources */,
 				9B453E5922B23B3F00D7D214 /* CJTabBar.swift in Sources */,
+				6494E9A0242B6454008F2134 /* CJBaseViewController.swift in Sources */,
 				9B453E4D22B0A9F900D7D214 /* CJTool.swift in Sources */,
 				9B453E4922B0A33B00D7D214 /* CJSmallVideoController.swift in Sources */,
 				9B453E4B22B0A34700D7D214 /* CJMineController.swift in Sources */,
+				6494E9A4242B6578008F2134 /* CJBaseTableViewController.swift in Sources */,
 				9B0991C922AE58AD007586A2 /* CollectionViewCell.swift in Sources */,
 				9B0991C722AE5268007586A2 /* CJConst.swift in Sources */,
 				9B453E4722B0A32B00D7D214 /* CJPushController.swift in Sources */,

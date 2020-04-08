@@ -27,6 +27,13 @@ class CJHomeController: UIViewController {
 }
 
 extension CJHomeController {
+    
+    private func setUpNavigation() {
+        self.navigationController?.navigationBar.barTintColor = UIColor.init(red: 210, green: 69, blue: 56, alpha: 1)
+        
+    }
+    
+    
     private func configUI() {
         self.navigationItem.title = "首页"
         self.view.backgroundColor = UIColor.white
